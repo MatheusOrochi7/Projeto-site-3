@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.6">
+    <title>Reviews de Filmes</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <nav class="menu-conta" aria-label="Menu da conta">
+            <a href="#">Perfil</a>
+            <a href="#">Configurações da conta</a>
+            <div class="notificacoes">
+                <button class="notificacoes-toggle" type="button" aria-expanded="false" aria-controls="painel-notificacoes">Notificações</button>
+                <div class="painel-notificacoes" id="painel-notificacoes" hidden>
+                    <strong>Notificações</strong>
+                    <p><span>ana_cast</span> começou a seguir você.</p>
+                    <p>Sua crítica de <span>Barbie</span> recebeu uma curtida.</p>
+                    <p>Há novos filmes para descobrir esta semana.</p>
+                </div>
+            </div>
+            <a href="#busca-filmes">Pesquisa de filmes</a>
+            <a href="#" class="sair">Sair da conta</a>
+        </nav>
+    </header>
+
+    <script src="script.js"></script>
+
+<div class="conteudo">
+
+    <div class="capa"></div>
+
+    <div class="perfilprimario">
+<div class="perfil">
+    <img src="img/perfil.jpg" alt="Foto de perfil">
+
+        <div class="informacao">
+    <h1>Rafa Brun</h1>
+    <p>@brunxz</p>
+        </div>
+</div>
+
+<div class="valoresseguidores">
+    <h2>25</h2>
+    <h3>|</h3>
+    <h2>47</h2>
+    <h3>|</h3>
+    <h2>47</h2>
+</div>
+
+<div class="seguidores">
+        <h2>Posts</h2>
+        <h2>Seguidores</h2>
+        <h2>Seguindo</h2>
+</div>
+
+<div class="bio">
+    <h2>Bio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+</div>
+
+</div>
+
+<div class="linhainferior">
+
+<div class="colunaesquerda">
+
+    <div class="perfilsecundario"> 
+
+
+<div class="TopFilmes">
+    <h2>Top Filmes</h2>
+    <ol>
+        <li>Filme 1</li>
+        <li>Filme 2</li>
+        <li>Filme 3</li>
+        <li>Filme 4</li>
+        <li>Filme 5</li>
+    </ol>
+</div>
+<div class="generos">
+    <h2>Generos</h2>
+    <ul>
+        <li>Terror</li>
+        <li>Comédia</li>
+        <li>Drama</li>
+        <li>Ação</li>
+        <li>Sci-Fi</li>
+    </ul>
+</div>
+    </div> <!-- fim div perfil secundario -->
+
+
+
+<!-- estrutura para tabela de rewiews e indicacoes-->
+
+<div class="conteudo-direita">
+
+<div class="painel">
+
+<div class="reviews">
+
+    <div class="reviews-cabecalho">
+        <h4>Reviews</h4>
+        <label class="busca-filmes">
+            <span class="visually-hidden">Pesquisar filmes</span>
+            <input id="busca-filmes" type="search" placeholder="Pesquisar filmes..." autocomplete="off">
+        </label>
+    </div>
+
+    <div class="carrossel">
+
+        <button class="seta esquerda" aria-label="Voltar">&#10094;</button>
+
+
+<div class="filmes" tabindex="0" aria-label="Carrossel de filmes avaliados">
+        
+    <div class="filme">
+        <h4>Panico 6</h4>
+        <img src="img/panico6.webp" alt="posterpanico6">
+        <div class="acoes-filme">
+            <div class="avaliacao" role="group" aria-label="Avaliar Pânico 6">
+                <button type="button" aria-label="1 estrela" data-nota="1">★</button><button type="button" aria-label="2 estrelas" data-nota="2">★</button><button type="button" aria-label="3 estrelas" data-nota="3">★</button><button type="button" aria-label="4 estrelas" data-nota="4">★</button><button type="button" aria-label="5 estrelas" data-nota="5">★</button>
+            </div>
+            <button type="button" class="favorito-btn" aria-pressed="false">♡ Favoritar</button>
+        </div>
+    </div>
+
+    <div class="filme">
+        <h4>Como treinar</h4>
+        <img src="img/comotreinarseudragao.webp" alt="postercomotrainarseudragao">
+        <div class="acoes-filme">
+            <div class="avaliacao" role="group" aria-label="Avaliar Como treinar seu dragão">
+                <button type="button" aria-label="1 estrela" data-nota="1">★</button><button type="button" aria-label="2 estrelas" data-nota="2">★</button><button type="button" aria-label="3 estrelas" data-nota="3">★</button><button type="button" aria-label="4 estrelas" data-nota="4">★</button><button type="button" aria-label="5 estrelas" data-nota="5">★</button>
+            </div>
+            <button type="button" class="favorito-btn" aria-pressed="false">♡ Favoritar</button>
+        </div>
+    </div>
+
+    <div class="filme">
+        <h4>Obsession</h4>
+        <img src="img/obsession.webp" alt="posterobsession">
+        <div class="acoes-filme">
+            <div class="avaliacao" role="group" aria-label="Avaliar Obsession">
+                <button type="button" aria-label="1 estrela" data-nota="1">★</button><button type="button" aria-label="2 estrelas" data-nota="2">★</button><button type="button" aria-label="3 estrelas" data-nota="3">★</button><button type="button" aria-label="4 estrelas" data-nota="4">★</button><button type="button" aria-label="5 estrelas" data-nota="5">★</button>
+            </div>
+            <button type="button" class="favorito-btn" aria-pressed="false">♡ Favoritar</button>
+        </div>
+    </div>
+
+    <div class="filme">
+        <h4>Oppenheimer</h4>
+        <img src="img/oppenheimer.webp" alt="posteroppenheimer">
+        <div class="acoes-filme">
+            <div class="avaliacao" role="group" aria-label="Avaliar Oppenheimer">
+                <button type="button" aria-label="1 estrela" data-nota="1">★</button><button type="button" aria-label="2 estrelas" data-nota="2">★</button><button type="button" aria-label="3 estrelas" data-nota="3">★</button><button type="button" aria-label="4 estrelas" data-nota="4">★</button><button type="button" aria-label="5 estrelas" data-nota="5">★</button>
+            </div>
+            <button type="button" class="favorito-btn" aria-pressed="false">♡ Favoritar</button>
+        </div>
+    </div>
+    
+    <div class="filme">
+        <h4>Barbie</h4>
+        <img src="img/barbie.jpg" alt="posterbarbie">
+        <div class="acoes-filme">
+            <div class="avaliacao" role="group" aria-label="Avaliar Barbie">
+                <button type="button" aria-label="1 estrela" data-nota="1">★</button><button type="button" aria-label="2 estrelas" data-nota="2">★</button><button type="button" aria-label="3 estrelas" data-nota="3">★</button><button type="button" aria-label="4 estrelas" data-nota="4">★</button><button type="button" aria-label="5 estrelas" data-nota="5">★</button>
+            </div>
+            <button type="button" class="favorito-btn" aria-pressed="false">♡ Favoritar</button>
+        </div>
+    </div>
+
+    <div class="filme">
+        <h4>Narnia</h4>
+        <img src="img/narnia.webp" alt="posternarnia">
+        <div class="acoes-filme">
+            <div class="avaliacao" role="group" aria-label="Avaliar Narnia">
+                <button type="button" aria-label="1 estrela" data-nota="1">★</button><button type="button" aria-label="2 estrelas" data-nota="2">★</button><button type="button" aria-label="3 estrelas" data-nota="3">★</button><button type="button" aria-label="4 estrelas" data-nota="4">★</button><button type="button" aria-label="5 estrelas" data-nota="5">★</button>
+            </div>
+            <button type="button" class="favorito-btn" aria-pressed="false">♡ Favoritar</button>
+        </div>
+    </div>
+
+</div>
+
+    
+
+    <button class="seta direita" aria-label="avancar">&#10095;</button>
+
+    </div> <!-- fim div carrossel -->
+
+
+</div> <!-- fim div reviews -->
+
+<div class="indicacoes">
+
+    <h4>Indicações</h4>
+
+
+    <div class="terror">
+        <h4>Terror</h4>
+
+            <div class="carrossel">
+    <button class="seta esquerda" aria-label="Voltar">&#10094;</button>
+
+        <div class="posters" tabindex="0" aria-label="Carrossel de filmes de terror">
+            <img src="img/aentidade.jpg" alt="Pôster do filme A Entidade" data-titulo="A Entidade">
+            <img src="img/afreira.jpg" alt="Pôster do filme A Freira" data-titulo="A Freira">
+            <img src="img/it.webp" alt="Pôster do filme It" data-titulo="It">
+            <img src="img/oexorcista.webp" alt="Pôster do filme O Exorcista" data-titulo="O Exorcista">
+            <img src="img/sextafeira13.webp" alt="Pôster do filme Sexta-feira 13" data-titulo="Sexta-feira 13">
+            <img src="img/untildawn.jpg" alt="Pôster do filme Until Dawn" data-titulo="Until Dawn">
+            <img src="img/terrifier.webp" alt="Pôster do filme Terrifier" data-titulo="Terrifier">
+            <img src="img/halloween.webp" alt="Pôster do filme Halloween" data-titulo="Halloween">
+        </div>
+
+         <button class="seta direita" aria-label="avancar">&#10095;</button>
+            </div> <!-- fim div carrossel  -->
+    
+    </div> <!-- fim div terror -->
+
+    <div class="comedia">
+        <h4>Comédia</h4>
+
+            <div class="carrossel">
+    <button class="seta esquerda" aria-label="Voltar">&#10094;</button>
+
+
+        <div class="posters" tabindex="0" aria-label="Carrossel de filmes de comédia">
+            <img src="IMG/10coisasque.webp" alt="Pôster de 10 Coisas que Eu Odeio em Você" data-titulo="10 Coisas que Eu Odeio em Você">
+            <img src="IMG/asbranquelas.webp" alt="Pôster de As Branquelas" data-titulo="As Branquelas">
+            <img src="IMG/deadpool.webp" alt="Pôster de Deadpool" data-titulo="Deadpool">
+            <img src="IMG/gentegrande.jpg" alt="Pôster de Gente Grande" data-titulo="Gente Grande">
+            <img src="IMG/juntospeloacaso.jpg" alt="Pôster de Juntos pelo Acaso" data-titulo="Juntos pelo Acaso">
+            <img src="IMG/minhamae.jpg" alt="Pôster de Minha Mãe" data-titulo="Minha Mãe">
+            <img src="IMG/sebebernao.jpg" alt="Pôster de Se Beber, Não Case" data-titulo="Se Beber, Não Case">
+            <img src="IMG/umsenhorestagiario.webp" alt="Pôster de Um Senhor Estagiário" data-titulo="Um Senhor Estagiário">
+            <img src="IMG/todosmenosvoce.webp" alt="Pôster de Todos Menos Você" data-titulo="Todos Menos Você">
+            <img src="IMG/esposade.webp" alt="Pôster de Esposa de Mentirinha" data-titulo="Esposa de Mentirinha">
+            <img src="IMG/pixels.webp" alt="Pôster de Pixels" data-titulo="Pixels">
+            <img src="IMG/ted.jpg" alt="Pôster de Ted" data-titulo="Ted">
+            <img src="IMG/misterio.jpg" alt="Pôster de Mistério" data-titulo="Mistério">
+           
+        </div>
+
+  <button class="seta direita" aria-label="avancar">&#10095;</button>
+            </div> <!-- fim div carrossel  -->  
+
+    </div>
+
+
+
+</div> <!-- fim div indicacoes -->
+
+</div> <!--fim div painel-->
+
+<aside class="sugestoes">
+    <h3>Sugestões para você</h3>
+
+    <div class="usuario">
+        <div class="usuario-info">
+            <span class="avatar avatar1">A</span>
+            <div class="texto">
+                <strong>ana_cast</strong>
+                <small>Seguido por lucas</small>
+            </div>
+        </div>
+        <button class="seguir-btn" type="button" aria-pressed="false">Seguir</button>
+    </div>
+
+    <div class="usuario">
+        <div class="usuario-info">
+            <span class="avatar avatar2">L</span>
+            <div class="texto">
+                <strong>lucasfilm</strong>
+                <small>Popular agora</small>
+            </div>
+        </div>
+        <button class="seguir-btn" type="button" aria-pressed="false">Seguir</button>
+    </div>
+
+    <div class="usuario">
+        <div class="usuario-info">
+            <span class="avatar avatar3">M</span>
+            <div class="texto">
+                <strong>mila.rio</strong>
+                <small>Talvez você conheça</small>
+            </div>
+        </div>
+        <button class="seguir-btn" type="button" aria-pressed="false">Seguir</button>
+    </div>
+
+    <div class="usuario">
+        <div class="usuario-info">
+            <span class="avatar avatar4">R</span>
+            <div class="texto">
+                <strong>rafa.nova</strong>
+                <small>Seguido por ana</small>
+            </div>
+        </div>
+        <button class="seguir-btn" type="button" aria-pressed="false">Seguir</button>
+    </div>
+
+    <div class="usuario">
+        <div class="usuario-info">
+            <span class="avatar avatar5">V</span>
+            <div class="texto">
+                <strong>vinny_crit</strong>
+                <small>Na sua área</small>
+            </div>
+        </div>
+        <button class="seguir-btn" type="button" aria-pressed="false">Seguir</button>
+    </div>
+</aside>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h4>Perfil</h4>
+            <ul>
+                <li><a href="#">Minha conta</a></li>
+                <li><a href="#">Críticas salvas</a></li>
+                <li><a href="#">Lista de filmes</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Descubra</h4>
+            <ul>
+                <li><a href="#">Filmes populares</a></li>
+                <li><a href="#">Gêneros</a></li>
+                <li><a href="#">Lançamentos</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Comunidade</h4>
+            <ul>
+                <li><a href="#">Seguidores</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Sugestões</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Sobre</h4>
+            <ul>
+                <li><a href="#">Quem somos</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Termos</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 FilmReview • Avaliações de filmes e recomendações</p>
+    </div>
+</footer>
+
+</body>
+</html>
